@@ -1,0 +1,8 @@
+platform :ios, '10.0'
+use_frameworks!
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+target 'BWShortVideo' do
+  pod 'SnapKit'
+  pod 'SDWebImage'
+end
+
