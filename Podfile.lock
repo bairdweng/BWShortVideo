@@ -1,22 +1,26 @@
 PODS:
+  - AsyncSwift (2.0.4)
   - SDWebImage (5.9.0):
     - SDWebImage/Core (= 5.9.0)
   - SDWebImage/Core (5.9.0)
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
+  - AsyncSwift
   - SDWebImage
   - SnapKit
 
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - AsyncSwift
     - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
+  AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
   SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: af41a0c93591122da7c42bd14b09578f2f53bd02
+PODFILE CHECKSUM: d072d31fd7486606a51a74592eac00fad7694580
 
 COCOAPODS: 1.9.3

@@ -18,6 +18,12 @@
 		DA77929F251B1D8700B52DE2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA77929E251B1D8700B52DE2 /* HomeViewController.swift */; };
 		DA7792AC251B1E2500B52DE2 /* BWAVPlayerManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7792AB251B1E2500B52DE2 /* BWAVPlayerManage.swift */; };
 		DA7792B7251B1E3D00B52DE2 /* BWAVPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7792B6251B1E3D00B52DE2 /* BWAVPlayerView.swift */; };
+		DA7A7500251C36EC007380E2 /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A74FF251C36EC007380E2 /* DataTableViewCell.swift */; };
+		DA7A751B251C70DC007380E2 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A751A251C70DC007380E2 /* String+.swift */; };
+		DA7A7523251C9B03007380E2 /* BWWebCacheManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A7522251C9B03007380E2 /* BWWebCacheManage.swift */; };
+		DA7A7550251D939F007380E2 /* BWWebDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A754D251D939F007380E2 /* BWWebDownloadOperation.swift */; };
+		DA7A7551251D939F007380E2 /* BWWebDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A754E251D939F007380E2 /* BWWebDownloader.swift */; };
+		DA7A7552251D939F007380E2 /* BWWebCombineOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA7A754F251D939F007380E2 /* BWWebCombineOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,12 @@
 		DA77929E251B1D8700B52DE2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DA7792AB251B1E2500B52DE2 /* BWAVPlayerManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWAVPlayerManage.swift; sourceTree = "<group>"; };
 		DA7792B6251B1E3D00B52DE2 /* BWAVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWAVPlayerView.swift; sourceTree = "<group>"; };
+		DA7A74FF251C36EC007380E2 /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		DA7A751A251C70DC007380E2 /* String+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		DA7A7522251C9B03007380E2 /* BWWebCacheManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWWebCacheManage.swift; sourceTree = "<group>"; };
+		DA7A754D251D939F007380E2 /* BWWebDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWebDownloadOperation.swift; sourceTree = "<group>"; };
+		DA7A754E251D939F007380E2 /* BWWebDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWebDownloader.swift; sourceTree = "<group>"; };
+		DA7A754F251D939F007380E2 /* BWWebCombineOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BWWebCombineOperation.swift; sourceTree = "<group>"; };
 		E663F370003C0F97D5A979CA /* Pods_BWShortVideo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BWShortVideo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +139,7 @@
 		DA779263251B1A7600B52DE2 /* BWShortVideo */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A7519251C70D4007380E2 /* Utils */,
 				DA7792AA251B1E0B00B52DE2 /* Modules */,
 				DA77929D251B1D7800B52DE2 /* ViewControllers */,
 				DA779264251B1A7600B52DE2 /* AppDelegate.swift */,
@@ -160,6 +173,7 @@
 		DA77929D251B1D7800B52DE2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A74FE251C36BC007380E2 /* Views */,
 				DA77929E251B1D8700B52DE2 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
@@ -177,9 +191,37 @@
 		DA7792AA251B1E0B00B52DE2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				DA7A7513251C6E21007380E2 /* WebCache */,
 				DA7792A9251B1DC400B52DE2 /* AVPlayer */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		DA7A74FE251C36BC007380E2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A74FF251C36EC007380E2 /* DataTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DA7A7513251C6E21007380E2 /* WebCache */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A7522251C9B03007380E2 /* BWWebCacheManage.swift */,
+				DA7A754F251D939F007380E2 /* BWWebCombineOperation.swift */,
+				DA7A754E251D939F007380E2 /* BWWebDownloader.swift */,
+				DA7A754D251D939F007380E2 /* BWWebDownloadOperation.swift */,
+			);
+			path = WebCache;
+			sourceTree = "<group>";
+		};
+		DA7A7519251C70D4007380E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DA7A751A251C70DC007380E2 /* String+.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +399,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA7792AC251B1E2500B52DE2 /* BWAVPlayerManage.swift in Sources */,
+				DA7A7500251C36EC007380E2 /* DataTableViewCell.swift in Sources */,
+				DA7A751B251C70DC007380E2 /* String+.swift in Sources */,
 				DA779265251B1A7600B52DE2 /* AppDelegate.swift in Sources */,
 				DA779267251B1A7600B52DE2 /* SceneDelegate.swift in Sources */,
+				DA7A7552251D939F007380E2 /* BWWebCombineOperation.swift in Sources */,
+				DA7A7551251D939F007380E2 /* BWWebDownloader.swift in Sources */,
+				DA7A7523251C9B03007380E2 /* BWWebCacheManage.swift in Sources */,
+				DA7A7550251D939F007380E2 /* BWWebDownloadOperation.swift in Sources */,
 				DA77929F251B1D8700B52DE2 /* HomeViewController.swift in Sources */,
 				DA7792B7251B1E3D00B52DE2 /* BWAVPlayerView.swift in Sources */,
 			);
